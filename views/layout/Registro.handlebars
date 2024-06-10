@@ -1,0 +1,40 @@
+
+<div class="py-4">
+      <h2>Registro</h2>
+      <hr/>
+
+      <form action="/skaters" method="POST" enctype="multipart/form-data">
+        <div class="form-group row w-50 m-auto">
+          <div class="mb-3 col-12 col-sm-6">
+            <label>Email</label>
+            <input class="form-control m-auto" type="email" name="email" />
+          </div>
+          <div class="mb-3 col-12 col-sm-6">
+            <label>Nombre</label>
+            <input class="form-control m-auto" type="text" name="nombre"/>
+          </div>
+          <div class="mb-3 col-12 col-sm-6">
+            <label>Password</label>
+            <input class="form-control m-auto" type="number" name="password" />
+          </div>
+          <div class="mb-3 col-12 col-sm-6">
+            <label>Repita la password</label>
+            <input class="form-control m-auto" />
+          </div>
+          <div class="mb-3  col-12 col-sm-6">
+            <label>Años de experiencia</label>
+            <input class="form-control m-auto" type="number" name="anos_experiencia" />
+          </div>
+          <div class="mb-3 col-12 col-sm-6">
+            <label>Especialidad</label>
+            <input class="form-control m-auto" type="text" name="especialidad"/>
+          </div>
+          <div class="mb-3 col-12 col-sm-12">
+            <label>Foto de perfil</label>
+            <input type="file" />
+          </div>
+        </div>
+        <button class="btn btn-info mb-3">Registrarme</button>
+        <p><a href="/login"> Iniciar sesión</a></p>
+      </form>
+    </div>

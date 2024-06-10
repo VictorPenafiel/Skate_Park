@@ -1,0 +1,56 @@
+<div class="py-4">
+      <h2>Lista de participantes</h2>
+
+      <hr />
+
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Foto</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Años de experiencia</th>
+            <th scope="col">Especialidad</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        {{#each skaters }}  
+          <tr>
+            <th scope="row">{{this.id}}</th>
+            <td>
+                {{!-- <div></div> --}}
+                <img src="{{this.foto}}" alt="{{this.nombre}}">
+            </td>
+            <td>{{this.nombre}}</td>
+            <td>{{this.anos_experiencia}}</td>
+            <td>{{this.especialidad}}</td>
+            {{#if this.estado}}
+                <td class="text-success font-weight-bold">Aprobado</td>
+            {{else}}
+                <td class="text-success font-weight-bold">Aprobado</td>
+            {{/if}}
+          </tr>
+        {{/each}}
+          {{!-- <tr>
+            <th scope="row">2</th>
+            <td><div></div></td>
+            <td>Evelien Bouilliart</td>
+            <td>10</td>
+            <td>Heelflip</td>
+            <td class="text-success font-weight-bold">Aprobado</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td><div></div></td>
+            <td>Danny Way</td>
+            <td>8</td>
+            <td>Ollie</td>
+            <td class="text-warning font-weight-bold">En revisión</td>
+          </tr> --}}
+        </tbody>
+      </table>
+      <a href="#">Iniciar Sesión</a> |
+      <a href="/registro">Registrarme</a>
+    </div>
